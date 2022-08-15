@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideDown("slow");
+            });
+        });
+        $(document).ready(function () {
+            $("#f").click(function () {
+                $("#p").slideUp("slow");
+            });
+        });
+        $(document).ready(function(){  
+            $("#fl").click(function(){  
+                $("#pa").slideToggle("slow");  
+            });  
+        });
+    </script>
+    <style>
+        #panel,
+        #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: green;
+            border: solid 1px white;
+            color: white;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+
+        #p,
+        #f {
+            padding: 5px;
+            text-align: center;
+            background-color: blanchedalmond;
+            border: solid 1px brown;
+        }
+
+        #p {
+            padding: 50px;
+        }
+
+        #pa, #fl {  
+            padding: 5px;  
+            text-align: center;  
+            background-color: #7aef93;  
+            border: solid 1px #45f306;  
+        }  
+        #pa {  
+            padding: 50px;  
+            display:none;  
+        }  
+    </style>
+</head>
+
+<body>
+    <div id="flip">Click to slide down panel</div>
+    <div id="panel">Hello! Welcome To JQuery World .</div>
+
+    <hr>
+
+    <div id="f">Click to slide up panel</div>
+    <div id="p">jQuery is platform-independent.
+        jQuery means "write less do more"</div>
+
+    <hr>
+
+    <div id="fl">Click to slide toggle panel</div>  
+<div id="pa">HTML manipulation<br>
+    DOM manipulation<br>
+    DOM element selection<br>
+    CSS manipulation<br>
+    Effects and Animations<br>
+    Utilities<br>
+    AJAX<br>
+    HTML event methods<br>
+    JSON Parsing<br>
+    Extensibility through plug-ins</div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>display effects</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $("h4").hide();
+            });
+            $("#show").click(function () {
+                $("h4").show();
+            });
+            $("#toggle").click(function () {
+                $("h4").toggle();
+            });
+        });  
+    </script>
+
+    <style>
+        body {
+            background-color: rgb(249, 212, 168);
+        }
+
+        h4{
+            width: 30%;
+            height: 200px;
+            margin-right: 0.5%;
+            background-color: aqua;
+            text-align: center;
+            padding: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <h4>
+            <b>This is a little poem: </b><br />
+            Twinkle, twinkle, little star<br />
+            How I wonder what you are<br />
+            Up above the world so high<br />
+            Like a diamond in the sky<br />
+            Twinkle, twinkle little star<br />
+            How I wonder what you are
+        </h4>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button><br><br><br>
+        <button id="toggle">Toggle</button>
+    </div>
+</body>
+
+</html>
